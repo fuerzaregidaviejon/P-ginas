@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="Image/x-icon">
+    <title>Carta de amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reproductor.css">
+    <link rel="stylesheet" href="hearts.css">
+    
+</head>
+<body>
+    <main>
+        <div class="container-letter">
+        <div class="cover"></div>
+        <span class="corazon">😍</span>
+            <!-- Escribe el mensaje -->
+        <div class="paper"> Ingresa el texto aqui</div>
+        <div class="letter"></div>
+        </div>
+        <div class="options">
+            <button id="open">Abrir</button>
+            <button id="close">Cerrar</button>
+        </div>
+    
+    </main>
+    <!-- Corazones animados -->
+    <div class="heart-wrapper">
+        <div class="love"></div>
+    </div>
+    
+    <!-- Sobre con el mensaje -->
+    <div id="mensaje" class="mensaje">
+        <div class="tapa"></div>
+        <div class="contenido">
+            <p></p>
+        </div>
+    </div>
+    <div class="reproductor">
+        <div class="vinilo-container">
+            <img id="vinilo" src="vinilo.png" alt="Vinilo Girando">
+        </div>
+       
+        <input type="range" id="volumen" min="0" max="1" step="0.1">
+        <audio id="audio" src="Perfect.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+    <script src="hearts.js"></script>
+    <script src="vinilo.js"></script>
+</body>
+<address>
+</address>
+</html>

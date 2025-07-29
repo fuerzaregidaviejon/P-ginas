@@ -1,0 +1,45 @@
+.heart {
+    --size: 60px;
+    --half-size: calc(var(--size) / 2);
+    position: absolute;
+    background: red;
+    width: var(--size);
+    height: var(--size);
+    margin: 2rem 2rem;
+    transform: rotate(45deg);
+    animation: subirCorazones 5s linear infinite;
+    z-index: 10; 
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background: red;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(var(--x, 0%), var(--y, 0%));
+}
+
+.heart:before {
+    --y: -50%;
+    left: 0;
+}
+
+.heart:after {
+    --x: -50%;
+    top: 0;
+}
+
+@keyframes subirCorazones {
+    0% {
+        bottom: -10px; 
+        opacity: 1;
+    }
+    100% {
+        bottom: 100vh; 
+        opacity: 0;
+    }
+}

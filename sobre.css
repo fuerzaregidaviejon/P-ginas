@@ -1,0 +1,105 @@
+.sobre {
+    width: 280px; /* Más estrecha */
+    height: 180px; /* Más compacta */
+    max-width: 350px; /* Limita el crecimiento en pantallas grandes */
+    max-height: 250px;
+    border-radius: 10px; /* Bordes suavizados */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.tapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgb(169, 31, 31), rgb(255, 99, 99));
+    box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.3);
+    transform-origin: top;
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.contenido {
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    color: darkred;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.sobre.abierto .tapa {
+    transform: rotateX(-180deg); 
+    transition: transform 0.8s ease-in-out;
+}
+
+.sobre.abierto .contenido {
+    opacity: 1; 
+}
+
+.sobre {
+    width: 280px; /* Más estrecha */
+    height: 180px; /* Más compacta */
+    max-width: 350px; /* Limita el crecimiento en pantallas grandes */
+    max-height: 250px;
+    border-radius: 10px; /* Bordes suavizados */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.tapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgb(169, 31, 31), rgb(255, 99, 99));
+    box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.3);
+    transform-origin: top;
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.contenido {
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    color: darkred;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.sobre.abierto .tapa {
+    transform: rotateX(-180deg); 
+    transition: transform 0.8s ease-in-out;
+}
+
+.sobre.abierto .contenido {
+    opacity: 1; 
+}
